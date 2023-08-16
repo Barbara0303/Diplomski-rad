@@ -57,7 +57,7 @@
                     <h5 class="card-title placeholder">Flowebox</h5>
                     <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary placeholder">Check</a>
+                    <a href="#" class="btn btn-primary placeholder">Check it out</a>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <h5 class="card-title placeholder">Bouquet of roses</h5>
                     <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary placeholder">Check</a>
+                    <a href="#" class="btn btn-primary placeholder">Check it out</a>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
                     <h5 class="card-title placeholder">Peony seeds</h5>
                     <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary placeholder">Check</a>
+                    <a href="#" class="btn btn-primary placeholder">Check it out</a>
                 </div>
             </div>
         </div>

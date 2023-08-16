@@ -26,6 +26,7 @@ function scrollFunction() {
     ) {
         document.getElementById("navbar").style.backgroundColor = "#0e0e0ea1";
         document.getElementById("logo").classList.add("white-logo");
+        document.getElementById("logo-mobile").classList.add("white-logo");
         let navs = document.getElementsByClassName("nav-link");
         const array = Array.from(navs);
         array.forEach((element) => {
@@ -35,6 +36,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.backgroundColor = "white";
         let navs = document.getElementsByClassName("nav-link");
         document.getElementById("logo").classList.remove("white-logo");
+        document.getElementById("logo-mobile").classList.remove("white-logo");
         const array = Array.from(navs);
         array.forEach((element) => {
             element.style.color = "#000000a6";

@@ -4,13 +4,16 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand-mobile d-lg-none d-xl-none" href="#">
+            <div class="logo-img" id="logo-mobile"> </div>
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="{{ route('products') }}">Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Occasions</a>
