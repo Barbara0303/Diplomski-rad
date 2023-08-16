@@ -31,4 +31,11 @@ class HomeController extends Controller
         return view('products');
     }
 
+
+    public function aboutUs()
+    {
+        return view('about');
+    }
+
+
 }

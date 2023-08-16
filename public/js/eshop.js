@@ -5,7 +5,6 @@ window.onload = function() {
     array.forEach((element) => {
         element.classList.remove('placeholder');
     });
-
 }
 
 $("#myCarousel").on("slid.bs.carousel", function (e) {
@@ -19,6 +18,7 @@ window.onscroll = function () {
     scrollFunction();
 };
 
+
 function scrollFunction() {
     if (
         document.body.scrollTop > 20 ||
@@ -27,19 +27,19 @@ function scrollFunction() {
         document.getElementById("navbar").style.backgroundColor = "#0e0e0ea1";
         document.getElementById("logo").classList.add("white-logo");
         document.getElementById("logo-mobile").classList.add("white-logo");
-        let navs = document.getElementsByClassName("nav-link");
+        let navs = document.getElementsByClassName("active");
         const array = Array.from(navs);
         array.forEach((element) => {
             element.style.color = "#FFFFFF";
         });
     } else {
         document.getElementById("navbar").style.backgroundColor = "white";
-        let navs = document.getElementsByClassName("nav-link");
+        let navs = document.getElementsByClassName("active");
         document.getElementById("logo").classList.remove("white-logo");
         document.getElementById("logo-mobile").classList.remove("white-logo");
         const array = Array.from(navs);
         array.forEach((element) => {
-            element.style.color = "#000000a6";
+            element.style.color = "#000000";
         });
     }
 }

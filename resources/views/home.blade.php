@@ -97,7 +97,7 @@
                     <div class="review p-3 pb-0">The ever best experience I have with flowers shop online thank you so much
                         waheed for your support and delivery. I highly recommend to everyone to shop flowers for your love
                         ones and friends from flowershop online. </div>
-                    <div class="client-name p-3 pb-5">John Doe, Mr </div>
+                    <div class="client-name p-3 pb-5">John Doe </div>
                 </div>
                 <div class="vr col-lg-2 d-none d-lg-block"></div>
                 <div class="col-lg-5 col-sm-12 text-center testimonial">
@@ -112,7 +112,7 @@
                         delivered early and made a birthday lady very happy, I have used this company before and find them
                         first class, Thank you very much.
                     </div>
-                    <div class="client-name p-3 pb-5">Jane Doe, Mrs </div>
+                    <div class="client-name p-3 pb-5">Jane Doe </div>
                 </div>
             </div>
         </div>
@@ -139,4 +139,5 @@
             </div>
         </div>
     </div>
+    @include('layouts.nl')
 @endsection

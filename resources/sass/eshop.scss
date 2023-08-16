@@ -292,7 +292,8 @@ footer .quick-links {
 
 .review {
     height: fit-content;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 2;
 }
 
 .reviews {
@@ -319,6 +320,7 @@ footer .quick-links {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    border-radius: 4px;
 }
 
 .desc-roses {
@@ -340,6 +342,7 @@ footer .quick-links {
     background-size: cover;
     margin-bottom: 20px;
     background-position: center;
+    border-radius: 4px;
     &.seeds {
         background-image: url("../img/seeds.jpg");
     }
@@ -385,5 +388,83 @@ footer .quick-links {
     height: 720px;
     background-image: url("../img/buket.jpg");
     background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    & > .outer-span {
+        position: absolute;
+        transform: translate(-80px, 300px);
+        width: 190px;
+        background-color: white;
+        font-size: 18px;
+        padding: 20px;
+        font-weight: 500;
+    }
+    & > .outer-span > .inner-span {
+        font-size: 17px;
+        text-transform: uppercase;
+        color: $red;
+        font-weight: 400;
+    }
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color: white !important;
+        & > .outer-span {
+            background-color: $redOnHover;
+        }
+        & > .outer-span > .inner-span {
+            color: white !important;
+        }
+    }
+}
+
+#background-video {
+    width: -webkit-fill-available;
+    border-radius: 4px;
+}
+
+.video-text {
+    position: relative;
+    transform: translate(0px, -156px);
+    background: white;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+h3, h6 {
+    color: $red;
+}
+
+.about-us {
+    line-height: 2;
+}
+
+.history {
+    background-color: $brown;
+    color: white;
+}
+
+.team > .card {
+    width: 24rem;
+    box-shadow: none;
+    border: none;
+    &:hover {
+        scale: none;
+    }
+    & > .card-img-top {
+        height: auto;
+    }
+}
+
+#button-addon2 {
+    background-color: $red;
+    color: white;
+    border-color: $red;
+    &:hover {
+        background-color: $redOnHover;
+    }
+}
+
+.nl-text {
+    font-weight: 500;
+    font-size: 18px;
 }
