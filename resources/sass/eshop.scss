@@ -10,6 +10,7 @@ $redOnHover: #660b0b;
 body {
     background-color: $white;
     font-family: Poppins;
+    font-size: 16px;
 }
 
 .logo-img {
@@ -24,6 +25,9 @@ body {
     .logo-img {
         width: 75px;
         height: 75px;
+    }
+    .img-1 {
+        box-shadow: none !important;
     }
 }
 
@@ -51,7 +55,7 @@ body {
 }
 
 .navbar {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 5px 8px;
 }
 
 a.nav-link:hover {
@@ -71,7 +75,7 @@ a.nav-link:hover {
 .navbar-brand-mobile {
     flex: 1;
     text-align: -webkit-center;
-    padding-right: 52px;
+    padding-right: 60px;
     padding-top: 26px;
     padding-bottom: 10px;
 }
@@ -120,6 +124,7 @@ footer {
     }
     a {
         color: $white;
+        text-decoration: underline;
 
         &:hover {
             color: $white;
@@ -207,65 +212,108 @@ footer .quick-links {
 }
 
 .inner-text-card {
-    font-size: 20px;
-    padding: 8px;
+    font-size: 22px;
+    padding-left: 8px;
 }
 
-@media (max-width: 1030.98px) {
+@media (max-width: 1220.98px) {
     .inner-text-card {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 18px;
+        padding-left: 8px;
     }
     .text-carousel {
         font-weight: bolder;
         font-size: 45px;
-        padding: 12px;
+        padding-left: 12px;
     }
     .carousel-card {
         height: 250px;
+        width: 60%;
     }
 }
 
 .card-img-top {
-    height: 400px;
+    height: 450px;
 }
 
 .card {
     padding-left: 0px;
     padding-right: 0px;
-    width: 22rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 20rem;
+    box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
+    border: none;
     &:hover {
         scale: 105%;
     }
 }
 
-@media (max-width: 1200px) {
+.card-body {
+    background-color: white;
+}
+
+@media (max-width: 1400px) {
+    .about-us {
+        font-size: 14px;
+    }
     .card {
-        width: 20rem;
+        width: 16rem !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-us {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    body,
+    #button-addon2,
+    .btn-primary,
+    .about-us {
+        font-size: 14px !important;
+    }
+    .form-control {
+        font-size: 16px;
+    }
+    .input-group.mb-3 {
+        box-shadow: none !important;
+    }
+    .card {
+        box-shadow: none !important;
+        &:hover {
+            scale: none;
+        }
+    }
+    .title {
+        font-size: 46px !important;
+    }
+    .card-img,
+    .card-img-top,
+    .img-1 {
+        border-radius: 0 !important;
+    }
+    .card-img-top {
+        height: 400px !important;
+    }
+    .nl-text, .desc-sub {
+        text-align: center;
     }
 }
 
 .container {
     padding-top: 3rem;
-    padding-left: 0px;
-    padding-right: 0px;
 }
 
 .btn-primary {
     background-color: $red;
     border-color: $red;
     text-transform: uppercase;
-    &:hover {
-        background-color: $redOnHover;
-        border-color: $redOnHover;
+    &:hover,
+    &:active {
+        background-color: $redOnHover !important;
+        border-color: $redOnHover !important;
     }
-}
-
-.desc {
-    font-size: 28px;
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 .star {
@@ -321,6 +369,11 @@ footer .quick-links {
     background-size: cover;
     background-position: bottom;
     border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
+    transition: 1s linear;
+    &:hover {
+        background-image: url("../img/2-mobile.jpg");
+    }
 }
 
 .desc-roses {
@@ -333,7 +386,7 @@ footer .quick-links {
     color: black;
     &:hover {
         font-weight: 600;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
     }
 }
 
@@ -373,7 +426,7 @@ footer .quick-links {
         font-weight: 400;
     }
     &:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
         color: white !important;
         & > .outer-span {
             background-color: $redOnHover;
@@ -406,7 +459,7 @@ footer .quick-links {
         font-weight: 400;
     }
     &:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
         color: white !important;
         & > .outer-span {
             background-color: $redOnHover;
@@ -430,7 +483,9 @@ footer .quick-links {
     font-size: 18px;
 }
 
-h3, h6 {
+h3,
+h4,
+h6 {
     color: $red;
 }
 
@@ -438,13 +493,14 @@ h3, h6 {
     line-height: 2;
 }
 
-.history {
+.history,
+.subscribe {
     background-color: $brown;
     color: white;
 }
 
 .team > .card {
-    width: 24rem;
+    width: 20rem;
     box-shadow: none;
     border: none;
     &:hover {
@@ -466,5 +522,162 @@ h3, h6 {
 
 .nl-text {
     font-weight: 500;
-    font-size: 18px;
+}
+
+.social-icons {
+    position: relative;
+    text-align: center;
+    background-color: #790c0ce8;
+    border-radius: 4px;
+    top: -130%;
+    & > .list-inline-item {
+        padding: 5px;
+        & > a {
+            color: white;
+        }
+    }
+    & > .list-inline-item:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+}
+
+.scale:hover {
+    scale: 1.2;
+}
+
+.form-control:focus {
+    border-color: $red;
+    outline: 0;
+    box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.line-up {
+    animation: 3s anim-line-up ease-out;
+}
+@keyframes anim-line-up {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+.reveal.animation-active {
+    opacity: 1;
+}
+.animation-active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+.animation-active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+.animation-active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .reveal {
+        position: relative;
+        opacity: 1;
+    }
+    .reveal.animation-active {
+        opacity: 1;
+    }
+    .animation-active.fade-bottom {
+        animation: fade-bottom 0s ease-in;
+    }
+    .animation-active.fade-left {
+        animation: fade-left 0s ease-in;
+    }
+    .animation-active.fade-right {
+        animation: fade-right 0s ease-in;
+    }
+    .stars.mobile {
+        border-top: 2px solid white;
+    }
+}
+
+.cookies-eu-banner {
+    background: #000000b5;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+button {
+    transition: background 0.8s, color 0.8s, border-color 0.07s;
+}
+
+.cookies-eu-banner button {
+    text-transform: capitalize;
+}
+.input-group.mb-3 {
+    box-shadow: rgb(0 0 0 / 12%) 0px 5px 15px;
+}
+
+.title {
+    font-family: dancing script;
+    font-weight: 700;
+    text-transform: capitalize !important;
+    font-size: 50px;
+}
+
+.desc-sub {
+    font-size: 24px;
+    font-weight: 600;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
 }

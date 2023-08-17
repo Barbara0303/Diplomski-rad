@@ -10,31 +10,34 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{{ URL::asset('images/2.jpg') }}" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-card d-none d-md-block d-lg-block">
-                    <div class="text-carousel">
+                <div class="carousel-card  d-none d-md-block d-lg-block">
+                    <div class="text-carousel line-up d-none d-md-block d-lg-block">
                         Making Flowering Easy for Everyone</div>
 
-                    <div class="inner-text-card">We use ads to keep our content free for you.
+                    <div class="inner-text-card line-up d-xs-none d-sm-none d-md-block d-lg-block">We use ads to keep our
+                        content free for you.
                         Please allow ads and let sponsors fund your surfing.</div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ URL::asset('images/5.jpg') }}" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-card d-none d-md-block d-lg-block">
-                    <div class="text-carousel">
+                <div class="carousel-card  d-none d-md-block d-lg-block">
+                    <div class="text-carousel line-up d-none d-md-block d-lg-block">
                         Making Flowering Easy for Everyone</div>
 
-                    <div class="inner-text-card">We use ads to keep our content free for you.
+                    <div class="inner-text-card line-up d-xs-none d-sm-none d-md-block d-lg-block">We use ads to keep our
+                        content free for you.
                         Please allow ads and let sponsors fund your surfing.</div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ URL::asset('images/8.jpg') }}" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-card d-none d-md-block d-lg-block">
-                    <div class="text-carousel">
+                <div class="carousel-card  d-none d-md-block d-lg-block">
+                    <div class="text-carousel line-up d-none d-md-block d-lg-block">
                         Making Flowering Easy for Everyone</div>
 
-                    <div class="inner-text-card">We use ads to keep our content free for you.
+                    <div class="inner-text-card line-up d-xs-none d-sm-none d-md-block d-lg-block">We use ads to keep our
+                        content free for you.
                         Please allow ads and let sponsors fund your surfing.</div>
                 </div>
             </div>
@@ -48,16 +51,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container">
-        <div class="text-center pb-3 desc">Shop Best Sellers</div>
+
+    <div class="container reveal fade-bottom">
+        <div class="text-center pb-3 desc title">Shop Best Sellers</div>
         <div class="row align row-gap-3">
             <div class="card col-md-4">
                 <img src="{{ URL::asset('images/flowerbox.jpg') }}" class="card-img-top placeholder" alt="...">
                 <div class="card-body placeholder-glow">
                     <h5 class="card-title placeholder">Flowebox</h5>
-                    <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk
+                        of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary placeholder">Check it out</a>
+                    <a href="#" class="btn btn-primary placeholder col-12 col-lg-6">Check it out</a>
                 </div>
             </div>
 
@@ -65,9 +70,10 @@
                 <img src="{{ URL::asset('images/roses.jpg') }}" class="card-img-top placeholder" alt="...">
                 <div class="card-body placeholder-glow">
                     <h5 class="card-title placeholder">Bouquet of roses</h5>
-                    <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk
+                        of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary placeholder">Check it out</a>
+                    <a href="#" class="btn btn-primary placeholder col-12 col-lg-6">Check it out</a>
                 </div>
             </div>
 
@@ -75,16 +81,16 @@
                 <img src="{{ URL::asset('images/peony.jpg') }}" class="card-img-top placeholder" alt="...">
                 <div class="card-body placeholder-glow">
                     <h5 class="card-title placeholder">Peony seeds</h5>
-                    <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text placeholder">Some quick example text to build on the card title and make up the bulk
+                        of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary placeholder">Check it out</a>
+                    <a href="#" class="btn btn-primary placeholder col-12 col-lg-6">Check it out</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="reviews-region">
-        <div class="container">
-            <div class="text-center pb-3 desc">Customer's Review</div>
+    <div class="reviews-region reveal fade-bottom pt-5">
+        <div class="text-center desc title">Customer's Review</div>
             <div class="row align reviews">
                 <div class="col-lg-5 col-sm-12 text-center testimonial">
                     <div class="stars p-2 pt-5">
@@ -101,7 +107,7 @@
                 </div>
                 <div class="vr col-lg-2 d-none d-lg-block"></div>
                 <div class="col-lg-5 col-sm-12 text-center testimonial">
-                    <div class="stars p-2 pt-5">
+                    <div class="stars mobile p-2 pt-5">
                         <div class="star"></div>
                         <div class="star"></div>
                         <div class="star"></div>
@@ -118,9 +124,9 @@
         </div>
     </div>
 
-    <div class="roses-region pb-5">
+    <div class="roses-region pb-5 reveal fade-bottom">
         <div class="container">
-            <div class="text-center pb-3 desc">Widest range of roses</div>
+            <div class="text-center pb-3 desc title">Widest range of roses</div>
             <div class="row align">
                 <div class="col-lg-6 col-sm-12 text-center">
                     <div class="p-2">
@@ -139,5 +145,6 @@
             </div>
         </div>
     </div>
+    @include ('layouts.cookie')
     @include('layouts.nl')
 @endsection

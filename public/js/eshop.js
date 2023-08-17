@@ -1,23 +1,19 @@
-
-window.onload = function() {
+window.onload = function () {
     let placeholders = document.getElementsByClassName("placeholder");
     const array = Array.from(placeholders);
     array.forEach((element) => {
-        element.classList.remove('placeholder');
+        element.classList.remove("placeholder");
     });
-}
-
-$("#myCarousel").on("slid.bs.carousel", function (e) {
-    $("#myCarousel").carousel("2"); // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-});
-
-$("#myCarousel").carousel("1"); // Will start sliding to the slide 1 and returns to the caller
-$("#myCarousel").carousel("2");
+};
 
 window.onscroll = function () {
     scrollFunction();
 };
 
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
 
 function scrollFunction() {
     if (
@@ -25,6 +21,8 @@ function scrollFunction() {
         document.documentElement.scrollTop > 20
     ) {
         document.getElementById("navbar").style.backgroundColor = "#0e0e0ea1";
+        document.getElementById("icon").style.filter =
+            "invert(96%) sepia(4%) saturate(16%) hue-rotate(142deg) brightness(104%) contrast(105%)";
         document.getElementById("logo").classList.add("white-logo");
         document.getElementById("logo-mobile").classList.add("white-logo");
         let navs = document.getElementsByClassName("active");
@@ -34,6 +32,8 @@ function scrollFunction() {
         });
     } else {
         document.getElementById("navbar").style.backgroundColor = "white";
+        document.getElementById("icon").style.filter =
+            "invert(0%) sepia(100%) saturate(28%) hue-rotate(99deg) brightness(94%) contrast(106%)";
         let navs = document.getElementsByClassName("active");
         document.getElementById("logo").classList.remove("white-logo");
         document.getElementById("logo-mobile").classList.remove("white-logo");
@@ -42,4 +42,27 @@ function scrollFunction() {
             element.style.color = "#000000";
         });
     }
+}
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("animation-active");
+        } else {
+            reveals[i].classList.remove("animation-active");
+        }
+    }
+}
+
+const $cookiesBanner = document.querySelector(".cookies-eu-banner");
+if ($cookiesBanner) {
+    const $cookiesBannerButton = $cookiesBanner.querySelector("button");
+
+    $cookiesBannerButton.addEventListener("click", () => {
+        $cookiesBanner.remove();
+    });
 }
