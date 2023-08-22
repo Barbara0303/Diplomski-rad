@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+<div class="preloader-wrapper">
+    <div class="spinner-border text-danger" style="width: 3rem;height: 3rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
     <div id="carouselWelcome" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselWelcome" data-bs-slide-to="0" class="active" aria-current="true"
@@ -9,37 +14,25 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ URL::asset('images/2.jpg') }}" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-card  d-none d-md-block d-lg-block">
-                    <div class="text-carousel line-up d-none d-md-block d-lg-block">
-                        Making Flowering Easy for Everyone</div>
-
-                    <div class="inner-text-card line-up d-xs-none d-sm-none d-md-block d-lg-block">We use ads to keep our
-                        content free for you.
-                        Please allow ads and let sponsors fund your surfing.</div>
-                </div>
+                <img src="{{ URL::asset('images/5.jpg') }}" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block reveal fade-bottom">
+                    <h5>After women, flowers are the most lovely thing God has given the world.</h5>
+                    <p>- CHRISTIAN DIOR -</p>
+                  </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ URL::asset('images/5.jpg') }}" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-card  d-none d-md-block d-lg-block">
-                    <div class="text-carousel line-up d-none d-md-block d-lg-block">
-                        Making Flowering Easy for Everyone</div>
-
-                    <div class="inner-text-card line-up d-xs-none d-sm-none d-md-block d-lg-block">We use ads to keep our
-                        content free for you.
-                        Please allow ads and let sponsors fund your surfing.</div>
-                </div>
+                <img src="{{ URL::asset('images/2.jpg') }}" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>After women, flowers are the most lovely thing God has given the world.</h5>
+                    <p>- CHRISTIAN DIOR -</p>
+                  </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ URL::asset('images/8.jpg') }}" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-card  d-none d-md-block d-lg-block">
-                    <div class="text-carousel line-up d-none d-md-block d-lg-block">
-                        Making Flowering Easy for Everyone</div>
-
-                    <div class="inner-text-card line-up d-xs-none d-sm-none d-md-block d-lg-block">We use ads to keep our
-                        content free for you.
-                        Please allow ads and let sponsors fund your surfing.</div>
-                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>After women, flowers are the most lovely thing God has given the world.</h5>
+                    <p>- CHRISTIAN DIOR -</p>
+                  </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselWelcome" data-bs-slide="prev">
@@ -91,7 +84,7 @@
     </div>
     <div class="reviews-region reveal fade-bottom pt-5">
         <div class="text-center desc title">Customer's Review</div>
-            <div class="row align reviews">
+            <div class="row align reviews pt-3 pb-3">
                 <div class="col-lg-5 col-sm-12 text-center testimonial">
                     <div class="stars p-2 pt-5">
                         <div class="star"></div>

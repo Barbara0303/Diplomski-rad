@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class HomeController extends Controller
 {
@@ -23,14 +24,27 @@ class HomeController extends Controller
      */
     public function index()
     {
+        View::share('route', 'home');
         return view('home');
     }
 
     public function products()
     {
+        View::share('route', 'products');
         return view('products');
     }
 
+    public function occasions()
+    {
+        View::share('route', 'occasions');
+        return view('occasions');
+    }
+
+    public function registered()
+    {
+        View::share('route', 'registered');
+        return view('register');
+    }
 
     public function aboutUs()
     {
@@ -39,12 +53,18 @@ class HomeController extends Controller
 
     public function login()
     {
+        View::share('route', 'login');
         return view('login');
     }
 
     public function register()
     {
         return view('register');
+    }
+
+    public function wishlist()
+    {
+        return view('wishlist');
     }
 
 
