@@ -24,5 +24,7 @@ Route::get('/register', [App\Http\Controllers\HomeController::class, 'register']
 Route::get('/occasions', [App\Http\Controllers\HomeController::class, 'occasions'])->name('occasions');
 Route::get('/registered', [App\Http\Controllers\HomeController::class, 'registered'])->name('registered');
 Route::get('/wishlist', [App\Http\Controllers\HomeController::class, 'wishlist'])->name('wishlist');
+Route::get('/flowers', [App\Http\Controllers\HomeController::class, 'flowers'])->name('flowers');
+Route::get('/cart', [App\Http\Controllers\HomeController::class, 'cart'])->name('cart');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

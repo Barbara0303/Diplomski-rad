@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container text-center pt-5 pb-5">
+    <div class="container text-center pt-5 pb-5 reveal fade-bottom">
         <div class="text-center pb-3 desc title">Special Occasions</div>
         <div class="row">
             <div class="image wedding col-md-12 d-block d-lg-none">

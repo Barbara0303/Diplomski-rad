@@ -4,7 +4,7 @@
         <div class="text-center pb-3 desc title">Our products</div>
         <div class="row">
             <div class="col-lg-4 col-md-6 reveal fade-left">
-                <div class="bouquet"><span class="outer-span">Flower bouquets<span class="inner-span"> 15 ITEMS</span></span>
+                <div class="bouquet"><a href="{{route('flowers')}}" class="outer-span">Flower bouquets<span class="inner-span"> 9 ITEMS</span></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 reveal fade-bottom">

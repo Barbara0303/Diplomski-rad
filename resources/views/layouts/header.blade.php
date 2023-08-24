@@ -47,7 +47,7 @@
                 <li class="nav-item">
                     <a class="nav-link active d-none d-lg-block @php
                     if (isset($route) && $route === 'cart') echo 'active-nav';
-                    @endphp" aria-current="page" href="#">Cart (0)</a>
+                    @endphp" aria-current="page" href="{{route('cart')}}">Cart (0)</a>
                 </li>
             </ul>
         </div>

@@ -68,4 +68,16 @@ class HomeController extends Controller
     }
 
 
+    public function flowers()
+    {
+        View::share('route', 'products');
+        return view('flowers');
+    }
+
+    public function cart()
+    {
+        View::share('route', 'cart');
+        return view('cart');
+    }
+
 }
