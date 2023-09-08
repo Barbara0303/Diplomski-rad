@@ -62,39 +62,18 @@ function reveal() {
     }
 }
 
-const cookiesBanner = document.querySelector(".cookies-eu-banner");
+const cookiesBanner = document.querySelector(".cookies-banner");
 if (cookiesBanner) {
     const cookiesBannerButton = cookiesBanner.querySelector("button");
-
     cookiesBannerButton.addEventListener("click", () => {
         cookiesBanner.remove();
     });
 }
 
-const preloaderWrapper = document.querySelector(".preloader-wrapper");
+const loaderWrapper = document.querySelector(".loader-wrapper");
 
-if (preloaderWrapper) {
+if (loaderWrapper) {
     window.addEventListener("load", function () {
-        preloaderWrapper.classList.add("fade-out-animation");
+        loaderWrapper.classList.add("fade-out-animation");
     });
 }
-
-
-(() => {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })()

@@ -1,4 +1,4 @@
-<div class="cookies-eu-banner pt-3 pb-3">
+<div class="cookies-banner pt-3 pb-3">
     <div class="container">
     <div class="row">
         <div class="col-12">
